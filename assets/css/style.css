@@ -1601,6 +1601,11 @@ li,
   transform: translateY(-50%);
   border-radius: 100%;
 }
+@media (max-width: 767px) {
+  .footer-section .footer-bg .footer-main .footer-widget.link-widget .links li::before {
+    display: none;
+  }
+}
 .footer-section .footer-bg .footer-main .footer-widget.link-widget .links li a {
   color: var(--pn-paragraph);
   font-size: 14px;

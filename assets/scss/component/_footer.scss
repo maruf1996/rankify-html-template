@@ -44,6 +44,9 @@
                 top: 50%;
                 transform: translateY(-50%);
                 border-radius: 100%;
+                @media #{$xs} {
+                  display: none;
+                }
               }
               a {
                 color: var(--pn-paragraph);
