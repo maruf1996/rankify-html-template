@@ -1,0 +1,22 @@
+@use "../utils" as *;
+
+.cta-section {
+  border-radius: 30px;
+  background: #ffdf6e;
+  padding: 84px 82px;
+  margin-top: -240px;
+  @media #{$xs} {
+    padding: 40px 20px;
+    border-radius: 0;
+    margin-top: -160px;
+  }
+  .cta-text {
+    .text {
+      color: var(--pn-black);
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.4px;
+      max-width: 290px;
+    }
+  }
+}

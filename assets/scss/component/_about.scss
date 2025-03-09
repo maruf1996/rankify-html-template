@@ -1,0 +1,55 @@
+@use "../utils" as *;
+
+.about-section {
+  background: var(--pn-linear-color);
+  .image-box {
+    max-width: 615px;
+    height: 550px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    padding-left: 27px;
+    @media #{$md,$xs} {
+      padding-left: 0;
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+    .project-status-box {
+      width: 312px;
+      height: 315px;
+      background: var(--pn-white);
+      bottom: 19px;
+      right: 20px;
+      .project-status {
+        .number {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #2b2b5e;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 54.9px;
+          letter-spacing: -0.8px;
+        }
+      }
+      .title {
+        color: var(--pn-black);
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .about-list {
+    li {
+      color: var(--pn-black-3);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      gap: 10px;
+    }
+    li + li {
+      margin-top: 20px;
+    }
+  }
+}

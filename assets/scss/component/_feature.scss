@@ -1,0 +1,99 @@
+@use "../utils" as *;
+
+.feature-section {
+  background: var(--pn-black);
+  .fact-content {
+    background: var(--700, #0e1016);
+    padding: 16px 30px 0 60px;
+    @media #{$md,$xs} {
+      padding: 20px;
+    }
+    .fact-img {
+      img {
+        @media #{$md,$xs} {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .feature-cards {
+    .feature-card {
+      background: var(--pn-primary);
+      padding: 40px 30px;
+      .number {
+        color: var(--pn-black);
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 36px;
+        opacity: 0.2;
+      }
+      .title {
+        color: var(--pn-black-4);
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: capitalize;
+      }
+      .details {
+        color: var(--pn-black-2);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+    }
+  }
+  .feature-part {
+    .counter-box {
+      border: 1px solid var(--pn-tertiary);
+      background: rgba(237, 242, 247, 0.05);
+      padding: 60px 0;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      @media #{$xl} {
+        width: 250px;
+        height: 250px;
+        padding: 40px 0;
+      }
+      @media #{$lg} {
+        width: 210px;
+        height: 210px;
+        padding: 30px 0;
+        flex-shrink: 0;
+      }
+      &.style-2 {
+        margin-left: -20px;
+        @media #{$md,$xs} {
+          margin-left: auto;
+        }
+      }
+      .number {
+        color: var(--pn-white);
+        font-size: 54px;
+        line-height: 59.4px;
+        letter-spacing: -1.5px;
+        @media #{$xl} {
+          font-size: 48px;
+          line-height: 1;
+        }
+        @media #{$lg} {
+          font-size: 45px;
+          line-height: 1;
+        }
+      }
+      .title {
+        color: var(--pn-white);
+        font-size: 22px;
+        line-height: 27px;
+        @media #{$xl} {
+          font-size: 20px;
+          line-height: 1;
+        }
+        @media #{$lg} {
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

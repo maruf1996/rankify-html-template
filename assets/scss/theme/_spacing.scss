@@ -1,0 +1,74 @@
+@use "../utils" as *;
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+.mt-m-120 {
+  margin-top: -120px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-18 {
+  margin-bottom: 18px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mb-90 {
+  margin-bottom: 90px;
+}
+.py-120 {
+  padding: 120px 0;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-120 {
+  padding-top: 120px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pb-120 {
+  padding-bottom: 120px;
+}
+.pr-32 {
+  padding-right: 32px;
+  @media #{$md,$xs} {
+    padding-right: 0;
+  }
+}

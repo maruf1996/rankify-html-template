@@ -1,0 +1,23 @@
+@use "../utils" as *;
+
+// services section one
+.service-section {
+  background-color: var(--pn-background);
+  .service-item {
+    background: var(--pn-white);
+    border: 1px solid transparent;
+    transition: 0.3s;
+    .service-text {
+      padding: 30px;
+      .title {
+        color: var(--pn-black-4);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+      }
+    }
+    &:hover {
+      border: 1px solid var(--pn-border);
+    }
+  }
+}

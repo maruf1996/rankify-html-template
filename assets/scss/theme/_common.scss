@@ -1,0 +1,30 @@
+@use "../utils" as *;
+
+.br-10 {
+  border-radius: 10px;
+}
+.br-15 {
+  border-radius: 15px;
+}
+.br-17 {
+  border-radius: 17px;
+}
+.br-20 {
+  border-radius: 20px;
+}
+.br-37 {
+  border-radius: 37px;
+}
+.br-45 {
+  border-radius: 45px;
+}
+.br-top-15 {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.bg-tertiary {
+  background-color: var(--pn-tertiary) !important;
+}
+.bg-purple {
+  background-color: var(--pn-purple) !important;
+}

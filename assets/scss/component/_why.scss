@@ -1,0 +1,16 @@
+@use "../utils" as *;
+
+.why-section {
+  .why-main {
+    padding: 80px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$xl,$lg,$md,$xs} {
+      padding: 40px;
+    }
+    @media #{$xxs} {
+      padding: 20px;
+    }
+  }
+}

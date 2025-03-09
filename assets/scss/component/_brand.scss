@@ -1,0 +1,13 @@
+@use "../utils" as *;
+
+.brand-area {
+  background: var(--pn-primary);
+  padding: 55px 0;
+  .brand-slider {
+    gap: 44px;
+    .brand-item {
+      gap: 44px;
+      animation: scroll1 18s linear infinite;
+    }
+  }
+}

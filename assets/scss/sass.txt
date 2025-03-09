@@ -1,0 +1,1 @@
+sass --watch "D:\Web Development\Nahid Raj\rankify-html-template\assets\scss\main.scss":"D:\Web Development\Nahid Raj\rankify-html-template\assets\css\style.css"

@@ -1,0 +1,60 @@
+@use "../utils" as *;
+
+.pn-offcanvas-menu ul {
+  list-style: none;
+  li {
+    position: relative;
+    & .sub-menu {
+      display: none;
+      padding-left: 20px;
+    }
+    & > a {
+      padding: 8px 0;
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover {
+        color: var(--pn-secondary);
+      }
+      i {
+        display: none;
+      }
+    }
+    &:not(:last-child) {
+      & > a {
+        border-bottom: 1px solid rgba(1, 15, 28, 0.1);
+      }
+    }
+    &.active {
+      & > a {
+        color: var(--pn-secondary);
+      }
+      & > .tp-menu-close {
+        border-color: var(--pn-secondary);
+        color: var(--pn-white);
+        background-color: var(--pn-secondary);
+        & i {
+          @include transform(rotate(90deg));
+        }
+      }
+    }
+  }
+}
+
+.pn-menu-close {
+  position: absolute;
+  right: 0;
+  top: 7.5px;
+  border: 1px solid rgba(1, 15, 28, 0.12);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 29px;
+  @include transition(0.3s);
+  &:hover {
+    background-color: var(--pn-secondary);
+    color: var(--pn-white);
+    border-color: var(--pn-secondary);
+  }
+}

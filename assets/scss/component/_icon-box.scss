@@ -1,0 +1,23 @@
+@use "../utils" as *;
+
+.social-icon-box {
+  ul {
+    li {
+      a {
+        i {
+          color: var(--pn-black-2);
+        }
+      }
+    }
+    li + li {
+      margin-left: 26px;
+    }
+  }
+}
+
+.icon-box {
+  width: 156px;
+  height: 137px;
+  border-radius: 0px 0px 90px 0px;
+  background: rgb(63, 90, 243, 0.1);
+}

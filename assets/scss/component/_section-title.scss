@@ -1,0 +1,29 @@
+@use "../utils" as *;
+
+.section-title {
+  .title {
+    color: var(--pn-black-3);
+    font-size: 54px;
+    line-height: 59.4px;
+    letter-spacing: -1.5px;
+    @media #{$lg} {
+      font-size: 48px;
+    }
+    @media #{$md} {
+      font-size: 40px;
+    }
+    @media #{$xs} {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  .sub-title {
+    color: var(--pn-black-3);
+    font-size: 14px;
+    line-height: 22px;
+    padding: 3px 14px;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--pn-black-2);
+  }
+}
